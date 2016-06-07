@@ -2,9 +2,9 @@ require 'random_data'
 
 #Create Users
 
-2.times do
+10.times do
   User.create!(
-  name: RandomData.random_word,
+  username: RandomData.random_word,
   email: RandomData.random_sentence,
   password: "test12"
   )
@@ -13,7 +13,7 @@ end
 
 users = User.all
 
-2.times do
+10.times do
   Item.create!(
   body: RandomData.random_sentence
   )
@@ -21,7 +21,7 @@ end
 
 items = Item.all
 
-2.times do
+10.times do
   List.create!(
   name: RandomData.random_sentence,
   user: users.sample,

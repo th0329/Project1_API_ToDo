@@ -1,12 +1,12 @@
 class UserSerializer < ActiveModel::Serializer
-  attributes :id, :name, :email, :created_at
+  attributes :id, :username, :email, :created_at
 
 #Delegate the practical definition of "name" to the User model, where it belongs,
 #rather than redefining it here.
 
-  def name
+  def username
 
-    object.name
+    object.username
 
   end
 

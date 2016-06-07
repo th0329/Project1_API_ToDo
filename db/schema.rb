@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 20160606051740) do
   add_index "lists", ["user_id"], name: "index_lists_on_user_id"
 
   create_table "users", force: :cascade do |t|
-    t.string   "name"
+    t.string   "username"
     t.string   "email"
     t.string   "password"
     t.datetime "created_at", null: false
